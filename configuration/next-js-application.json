@@ -1,0 +1,27 @@
+{
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "display": "Sharadox Next.js application",
+  "extends": "./base.json",
+  "compilerOptions": {
+    "lib": ["ES2024", "DOM", "DOM.Iterable"],
+    "module": "esnext",
+    "moduleResolution": "bundler",
+    "jsx": "react-jsx",
+    "allowJs": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "incremental": true,
+    "customConditions": [],
+    "plugins": [{ "name": "next" }]
+  },
+  "include": [
+    "${configDir}/next-env.d.ts",
+    "${configDir}/src/**/*.ts",
+    "${configDir}/src/**/*.tsx",
+    "${configDir}/*.ts",
+    "${configDir}/*.mts",
+    "${configDir}/.next/types/**/*.ts",
+    "${configDir}/.next/dev/types/**/*.ts"
+  ],
+  "exclude": ["${configDir}/node_modules", "${configDir}/.next", "${configDir}/documentation", "${configDir}/coverage"]
+}

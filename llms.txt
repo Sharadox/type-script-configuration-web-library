@@ -1,0 +1,11 @@
+# @sharadox/type-script-configuration-web-library
+
+> Shared tsconfig bases using ${configDir}, so include/output paths are relative to the extending project.
+
+- base.json: ES2024, strict, noUncheckedIndexedAccess, erasableSyntaxOnly, verbatimModuleSyntax, noEmit, customConditions ["sharadox-source"], types node; include source/** and root *.ts; exclude node_modules, distribution, documentation, coverage, source/**/test-fixture.
+- node.json: + module/moduleResolution nodenext (tools, actions, server libraries).
+- react-library.json: + DOM, moduleResolution bundler, jsx react-jsx.
+- next-js-application.json: + DOM, bundler, jsx, incremental, next plugin; includes src/**, next-env.d.ts, .next/types; customConditions [].
+- library-build.json: emit source/ → distribution/ with declarations; excludes tests and fixtures. Use `"extends": ["./tsconfig.json", "@sharadox/type-script-configuration-web-library/library-build.json"]`.
+- Install: `pnpm add -D typescript @types/node @sharadox/type-script-configuration-web-library`
+- Licence: Sharadox Open Source Licence 0.1.0

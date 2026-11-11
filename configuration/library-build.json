@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "display": "Sharadox library build (source/ \u2192 distribution/, tests left out). Extend it after your own tsconfig.json.",
+  "compilerOptions": {
+    "noEmit": false,
+    "declaration": true,
+    "declarationMap": true,
+    "sourceMap": true,
+    "rootDir": "${configDir}/source",
+    "outDir": "${configDir}/distribution",
+    "customConditions": []
+  },
+  "include": ["${configDir}/source/**/*.ts", "${configDir}/source/**/*.tsx"],
+  "exclude": [
+    "${configDir}/source/**/*unit-test.ts",
+    "${configDir}/source/**/*unit-test.tsx",
+    "${configDir}/source/**/*benchmark-test.ts",
+    "${configDir}/source/**/*end-to-end-test.ts",
+    "${configDir}/source/**/test-fixture/**"
+  ]
+}

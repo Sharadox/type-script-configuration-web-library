@@ -1,0 +1,26 @@
+{
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "display": "Sharadox base",
+  "compilerOptions": {
+    "target": "ES2024",
+    "lib": ["ES2024"],
+    "strict": true,
+    "noUncheckedIndexedAccess": true,
+    "noImplicitOverride": true,
+    "noFallthroughCasesInSwitch": true,
+    "erasableSyntaxOnly": true,
+    "verbatimModuleSyntax": true,
+    "skipLibCheck": true,
+    "noEmit": true,
+    "customConditions": ["sharadox-source"],
+    "types": ["node"]
+  },
+  "include": ["${configDir}/source/**/*.ts", "${configDir}/source/**/*.tsx", "${configDir}/*.ts", "${configDir}/*.mts"],
+  "exclude": [
+    "${configDir}/node_modules",
+    "${configDir}/distribution",
+    "${configDir}/documentation",
+    "${configDir}/coverage",
+    "${configDir}/source/**/test-fixture/**"
+  ]
+}

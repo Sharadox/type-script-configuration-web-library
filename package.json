@@ -1,0 +1,72 @@
+{
+  "name": "@sharadox/type-script-configuration-web-library",
+  "version": "0.1.0",
+  "description": "Shared TypeScript configurations for Sharadox projects: Node tools, React libraries, Next.js applications and library builds.",
+  "private": false,
+  "license": "SEE LICENSE IN LICENCA.md",
+  "author": "Sharadox <contact@sharadox.com>",
+  "type": "module",
+  "exports": {
+    "./base.json": "./configuration/base.json",
+    "./node.json": "./configuration/node.json",
+    "./react-library.json": "./configuration/react-library.json",
+    "./next-js-application.json": "./configuration/next-js-application.json",
+    "./library-build.json": "./configuration/library-build.json"
+  },
+  "files": [
+    "configuration",
+    "LICENCA.md",
+    "LICENSE.md",
+    "NOTICE.md",
+    "llms.txt"
+  ],
+  "sideEffects": false,
+  "engines": {
+    "node": ">=24"
+  },
+  "packageManager": "pnpm@10.34.9",
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "build": "echo 'nothing to build: the configurations are published as they are'",
+    "lint": "eslint --max-warnings=0 .",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "type-check": "tsc --noEmit",
+    "test:unit": "vitest run --coverage",
+    "documentation": "typedoc",
+    "verify": "turbo run format:check lint type-check test:unit build",
+    "prepare": "husky || true"
+  },
+  "lint-staged": {
+    "*.{ts,tsx,js,mjs,cjs}": [
+      "prettier --write",
+      "eslint --fix --max-warnings=0"
+    ],
+    "*.{json,md,yml,yaml,scss}": "prettier --write"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sharadox/type-script-configuration-web-library.git"
+  },
+  "homepage": "https://github.com/Sharadox/type-script-configuration-web-library#readme",
+  "devDependencies": {
+    "@eslint/js": "^9.39.5",
+    "@types/node": "^24.19.2",
+    "@vitest/coverage-v8": "^5.1.0",
+    "eslint": "9.39.5",
+    "eslint-config-prettier": "^10.1.8",
+    "husky": "^9.1.7",
+    "lint-staged": "^17.6.0",
+    "prettier": "^3.9.10",
+    "turbo": "^2.11.10",
+    "typedoc": "^0.28.20",
+    "typescript": "6.0.3",
+    "typescript-eslint": "^8.72.2",
+    "vitest": "^5.1.0"
+  },
+  "peerDependencies": {
+    "typescript": ">=6"
+  }
+}
