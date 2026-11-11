@@ -8,4 +8,4 @@
 - next-js-application.json: + DOM, bundler, jsx, incremental, next plugin; includes src/**, next-env.d.ts, .next/types; customConditions [].
 - library-build.json: emit source/ → distribution/ with declarations; excludes tests and fixtures. Use `"extends": ["./tsconfig.json", "@sharadox/type-script-configuration-web-library/library-build.json"]`.
 - Install: `pnpm add -D typescript @types/node @sharadox/type-script-configuration-web-library`
-- Licence: Sharadox Open Source Licence 0.1.0
+- License: Sharadox Open Source License 0.1.0
