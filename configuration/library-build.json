@@ -9,10 +9,7 @@
     "rootDir": "${configDir}/source",
     "outDir": "${configDir}/distribution"
   },
-  "include": [
-    "${configDir}/source/**/*.ts",
-    "${configDir}/source/**/*.tsx"
-  ],
+  "include": ["${configDir}/source/**/*.ts", "${configDir}/source/**/*.tsx"],
   "exclude": [
     "${configDir}/source/**/*unit-test.ts",
     "${configDir}/source/**/*unit-test.tsx",
