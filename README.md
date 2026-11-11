@@ -44,6 +44,6 @@ Anything you set in your own `tsconfig.json` overrides the shared value.
 
 Tests compile small fixture projects (`source/configuration/test-fixture/`) with each configuration and check what TypeScript resolves. `pnpm verify` runs formatting, lint, type-check and tests. Branches follow `<feature>.development` → `development` → `index`, and releases are `v<version>` tags on `index`.
 
-## Licence
+## License
 
 Licença Sharadox de Código Aberto, versão 0.1.0. See [português](LICENCA.md) (the binding text) and the [English translation](LICENSE.md).
