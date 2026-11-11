@@ -51,6 +51,11 @@ describe("react-library", () => {
     });
     expect(compilerOptions.lib).toEqual(expect.arrayContaining(["es2024", "dom"]));
   });
+
+  test("knows CSS and Sass modules", () => {
+    expect(resolved(fixture("react-library")).files).toContain("./source/box/index.tsx");
+    expect(() => tsc("-p", fixture("react-library"))).not.toThrow();
+  });
 });
 
 describe("next-js-application", () => {
