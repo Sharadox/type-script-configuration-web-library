@@ -1,6 +1,6 @@
 {
   "name": "@sharadox/type-script-configuration-web-library",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Shared TypeScript configurations for Sharadox projects: Node tools, React libraries, Next.js applications and library builds.",
   "private": false,
   "license": "SEE LICENSE IN LICENCA.md",

@@ -7,8 +7,7 @@
     "declarationMap": true,
     "sourceMap": true,
     "rootDir": "${configDir}/source",
-    "outDir": "${configDir}/distribution",
-    "customConditions": []
+    "outDir": "${configDir}/distribution"
   },
   "include": ["${configDir}/source/**/*.ts", "${configDir}/source/**/*.tsx"],
   "exclude": [
