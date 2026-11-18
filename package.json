@@ -53,7 +53,7 @@
   "homepage": "https://github.com/Sharadox/type-script-configuration-web-library#readme",
   "devDependencies": {
     "@eslint/js": "^9.39.5",
-    "@types/node": "^24.19.2",
+    "@types/node": "^26.6.6",
     "@types/react": "^19.3.0",
     "@vitest/coverage-v8": "^5.1.0",
     "eslint": "9.39.5",
