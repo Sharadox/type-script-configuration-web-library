@@ -53,19 +53,19 @@
   "homepage": "https://github.com/Sharadox/type-script-configuration-web-library#readme",
   "devDependencies": {
     "@eslint/js": "^9.39.5",
-    "@types/node": "^24.19.2",
+    "@types/node": "^26.6.6",
     "@types/react": "^19.3.0",
-    "@vitest/coverage-v8": "^5.1.0",
+    "@vitest/coverage-v8": "^5.1.1",
     "eslint": "9.39.5",
     "eslint-config-prettier": "^10.1.8",
     "husky": "^9.1.7",
-    "lint-staged": "^17.6.0",
-    "prettier": "^3.9.10",
-    "turbo": "^2.11.10",
+    "lint-staged": "^17.6.2",
+    "prettier": "^3.10.1",
+    "turbo": "^2.11.13",
     "typedoc": "^0.28.20",
     "typescript": "6.0.3",
-    "typescript-eslint": "^8.72.2",
-    "vitest": "^5.1.0"
+    "typescript-eslint": "^8.73.0",
+    "vitest": "^5.1.1"
   },
   "peerDependencies": {
     "typescript": ">=6"
